@@ -1,7 +1,7 @@
 #Password Strength Checker Program
 import re
 
-#Password must be at least 12 charcters long
+#Checking the strength
 password = input("Enter Your Password. ")
 if len(password) < 12:
     print("Password must be at least 12 characters long.")
