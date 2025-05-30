@@ -1,15 +1,14 @@
-questions = ("What is 2 + 2:",
-             "What is 4 x 4:",
-             "What is 17 / 5:",
-             "What is 5 x 19:")
+questions = ("When was Red Dead Redemption 2 released?",
+             "When was the first God Of War game released?",
+             "How many games are in the God Of War franchise?",
+             "Is Marvel Rivals overrated?")
 
-choices = (("A) 9", "B) 5", "C) 4", "D) 10"),
-           ("A) 20", "B) 17", "C) 16", "D) 10"),
-           ("A) 3.4", "B) 5.8", "C) 7.9", "D) 10"),
-           ("A) 125", "B) 95", "C) 78", "D) 88"))
+choices = (("A) 2018", "B) 2019", "C) 2017", "D) 2020"), 
+           ("A) 2008", "B) 2001", "C) 2005", "D) 2002"), 
+           ("A) 11", "B) 10", "C) 9", "D) 7"), 
+           ("A) No", "B) Hell no", "C) Absolutely not", "D) Yes")) 
 
-answers = ("C", "C", "A", "B")
-guesses = []
+answers = ("A", "C", "B", "D")
 score = 0
 question_num = 0
 
@@ -21,19 +20,20 @@ for question in questions:
 
 
     guess = input("Enter (A, B, C, D) ").upper()
-    guesses.append(guess)
+
     if guess == answers[question_num]:
         print("CORRECT")
         score += 1
-    elif guess not == "a", 
     else:
-        
+        print("INCORRECT")
+        print("------------------")
+        print(f"THE CORRECT ANSWER WAS {answers[question_num]}")
 
     question_num += 1 
 
 if question_num > 3:
     print("===========================")
     print("---------------------------")
-    print(f"YOUR SCORE IS {score}")
+    print(f"YOUR SCORE IS {score}/{question_num}")
     print("---------------------------")
     print("===========================")
